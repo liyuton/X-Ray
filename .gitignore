@@ -1,0 +1,14 @@
+# Large local data and generated outputs
+input/
+output/
+temp_files/
+
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/

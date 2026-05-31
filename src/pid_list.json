@@ -1,0 +1,385 @@
+{
+  "threshold": 50,
+  "num_papers": 41,
+  "pid_list": [
+    "1493831303",
+    "1513869700",
+    "1528840936",
+    "1550061415",
+    "1565774502",
+    "1574798849",
+    "1854335913",
+    "1906197854",
+    "1973137999",
+    "1984306711",
+    "1986113254",
+    "1988037647",
+    "1995003498",
+    "1999479012",
+    "2004778468",
+    "2008541744",
+    "2035879262",
+    "2045751247",
+    "2050499271",
+    "2051518078",
+    "2060201892",
+    "2063792498",
+    "2070380466",
+    "2074573088",
+    "2080240343",
+    "2081338783",
+    "2089850899",
+    "2126466006",
+    "2131212430",
+    "2138058376",
+    "2148678808",
+    "2160811833",
+    "2161282555",
+    "2167435540",
+    "2177846120",
+    "2281205388",
+    "2313896841",
+    "2529326969",
+    "2798446640",
+    "4230640447",
+    "4234063865"
+  ],
+  "details": [
+    {
+      "pid": "4234063865",
+      "citation": 591,
+      "title": "Evidence as to man's place in nature",
+      "publication_year": 1863,
+      "topic": "Darwin theory of evolution",
+      "query_title": "Evidence as to man's place in nature"
+    },
+    {
+      "pid": "2004778468",
+      "citation": 17645,
+      "title": "The genetical theory of natural selection",
+      "publication_year": 1930,
+      "topic": "Darwin theory of evolution",
+      "query_title": "The genetical theory of natural selection"
+    },
+    {
+      "pid": "2161282555",
+      "citation": 618,
+      "title": "Germ Plasm and the Differentiation of the Germ Cell Line",
+      "publication_year": 1976,
+      "topic": "Darwin theory of evolution",
+      "query_title": "Germ Plasm and the Differentiation of the Germ Cell Line"
+    },
+    {
+      "pid": "1493831303",
+      "citation": 1352,
+      "title": "The Causes of Evolution",
+      "publication_year": 1966,
+      "topic": "Darwin theory of evolution",
+      "query_title": "The Causes of Evolution"
+    },
+    {
+      "pid": "4230640447",
+      "citation": 1764,
+      "title": "Genetics and the Origin of Species",
+      "publication_year": 1938,
+      "topic": "Darwin theory of evolution",
+      "query_title": "Genetics and the Origin of Species"
+    },
+    {
+      "pid": "1984306711",
+      "citation": 3592,
+      "title": "Systematics and the Origin of Species",
+      "publication_year": 2005,
+      "topic": "Darwin theory of evolution",
+      "query_title": "Systematics and the Origin of Species"
+    },
+    {
+      "pid": "1854335913",
+      "citation": 2689,
+      "title": "Punctuated equilibria: the tempo and mode of evolution reconsidered",
+      "publication_year": 1977,
+      "topic": "Darwin theory of evolution",
+      "query_title": "Punctuated equilibria: the tempo and mode of evolution reconsidered"
+    },
+    {
+      "pid": "2131212430",
+      "citation": 4229,
+      "title": "Variation and Evolution in Plants",
+      "publication_year": 1950,
+      "topic": "Darwin theory of evolution",
+      "query_title": "Variation and Evolution in Plants"
+    },
+    {
+      "pid": "2063792498",
+      "citation": 15803,
+      "title": "The genetical evolution of social behaviour. I",
+      "publication_year": 1964,
+      "topic": "Darwin theory of evolution",
+      "query_title": "The genetical evolution of social behaviour. I"
+    },
+    {
+      "pid": "1973137999",
+      "citation": 892,
+      "title": "IX. A determination of the deflection of light by the sun's gravitational field, from observations made at the total eclipse of May 29, 1919",
+      "publication_year": 1920,
+      "topic": "heliocentric theory",
+      "query_title": "IX. A determination of the deflection of light by the sun's gravitational field, from observations made at the total eclipse of May 29, 1919"
+    },
+    {
+      "pid": "2529326969",
+      "citation": 1848,
+      "title": "The Foundation of the General Theory of Relativity",
+      "publication_year": 1916,
+      "topic": "heliocentric theory",
+      "query_title": "The Foundation of the General Theory of Relativity"
+    },
+    {
+      "pid": "2035879262",
+      "citation": 1258,
+      "title": "A Quantum Theory of the Scattering of X-rays by Light Elements",
+      "publication_year": 1923,
+      "topic": "heliocentric theory",
+      "query_title": "A Quantum Theory of the Scattering of X-rays by Light Elements"
+    },
+    {
+      "pid": "1574798849",
+      "citation": 1295,
+      "title": "LXXIX. <i>The scattering of α and β particles by matter and the structure of the atom</i>",
+      "publication_year": 1911,
+      "topic": "heliocentric theory",
+      "query_title": "LXXIX. <i>The scattering of α and β particles by matter and the structure of the atom</i>"
+    },
+    {
+      "pid": "1986113254",
+      "citation": 21669,
+      "title": "THE ADSORPTION OF GASES ON PLANE SURFACES OF GLASS, MICA AND PLATINUM.",
+      "publication_year": 1918,
+      "topic": "heliocentric theory",
+      "query_title": "THE ADSORPTION OF GASES ON PLANE SURFACES OF GLASS, MICA AND PLATINUM."
+    },
+    {
+      "pid": "2313896841",
+      "citation": 98,
+      "title": "Finite Representation of the Solar Gravitational Field in Flat Space of Six Dimensions",
+      "publication_year": 1921,
+      "topic": "heliocentric theory",
+      "query_title": "Finite Representation of the Solar Gravitational Field in Flat Space of Six Dimensions"
+    },
+    {
+      "pid": "2060201892",
+      "citation": 2102,
+      "title": "The quantum theory of the emission and absorption of radiation",
+      "publication_year": 1927,
+      "topic": "heliocentric theory",
+      "query_title": "The quantum theory of the emission and absorption of radiation"
+    },
+    {
+      "pid": "1513869700",
+      "citation": 1440,
+      "title": "Electromagnetic Theory of Gratings",
+      "publication_year": 1980,
+      "topic": "Newtonian physics",
+      "query_title": "Electromagnetic Theory of Gratings"
+    },
+    {
+      "pid": "1565774502",
+      "citation": 1550,
+      "title": "The mathematical theory of non-uniform gases : an account of the kinetic theory of viscosity, thermal conduction, and diffusion in gases",
+      "publication_year": 1970,
+      "topic": "Newtonian physics",
+      "query_title": "The mathematical theory of non-uniform gases : an account of the kinetic theory of viscosity, thermal conduction, and diffusion in gases"
+    },
+    {
+      "pid": "2148678808",
+      "citation": 132,
+      "title": "The Rotation of the Earth, and the Secular Accelerations of the Sun, Moon and Planets",
+      "publication_year": 1939,
+      "topic": "Newtonian physics",
+      "query_title": "The Rotation of the Earth, and the Secular Accelerations of the Sun, Moon and Planets"
+    },
+    {
+      "pid": "2798446640",
+      "citation": 397,
+      "title": "Lectures on theoretical physics",
+      "publication_year": 1950,
+      "topic": "Newtonian physics",
+      "query_title": "Lectures on theoretical physics"
+    },
+    {
+      "pid": "2081338783",
+      "citation": 10032,
+      "title": "A Treatise on the Theory of Bessel Functions.",
+      "publication_year": 1923,
+      "topic": "Newtonian physics",
+      "query_title": "A Treatise on the Theory of Bessel Functions."
+    },
+    {
+      "pid": "1528840936",
+      "citation": 3578,
+      "title": "Perturbation Methods in Fluid Mechanics",
+      "publication_year": 1965,
+      "topic": "Newtonian physics",
+      "query_title": "Perturbation Methods in Fluid Mechanics"
+    },
+    {
+      "pid": "2074573088",
+      "citation": 543,
+      "title": "On the Exponential Form of Time-Displacement Operators in Quantum Mechanics",
+      "publication_year": 1966,
+      "topic": "Newtonian physics",
+      "query_title": "On the Exponential Form of Time-Displacement Operators in Quantum Mechanics"
+    },
+    {
+      "pid": "2160811833",
+      "citation": 261,
+      "title": "On the Antiseptic Principle in the Practice of Surgery",
+      "publication_year": 1867,
+      "topic": "the germ theory of disease",
+      "query_title": "On the Antiseptic Principle in the Practice of Surgery"
+    },
+    {
+      "pid": "2177846120",
+      "citation": 1557,
+      "title": "On the Antibacterial Action of Cultures of a Penicillium, with Special Reference to their Use in the Isolation of B. influenzæ",
+      "publication_year": 1929,
+      "topic": "the germ theory of disease",
+      "query_title": "On the Antibacterial Action of Cultures of a Penicillium, with Special Reference to their Use in the Isolation of B. influenzæ"
+    },
+    {
+      "pid": "2070380466",
+      "citation": 1144,
+      "title": "On a remarkable bacteriolytic element found in tissues and secretions",
+      "publication_year": 1922,
+      "topic": "the germ theory of disease",
+      "query_title": "On a remarkable bacteriolytic element found in tissues and secretions"
+    },
+    {
+      "pid": "1995003498",
+      "citation": 135,
+      "title": "Studies on the nature and location of the capsid polypeptides of vaccinia virions",
+      "publication_year": 1972,
+      "topic": "the germ theory of disease",
+      "query_title": "Studies on the nature and location of the capsid polypeptides of vaccinia virions"
+    },
+    {
+      "pid": "2008541744",
+      "citation": 1068,
+      "title": "Streptomycin, a Substance Exhibiting Antibiotic Activity Against Gram-Positive and Gram-Negative Bacteria.* ",
+      "publication_year": 1944,
+      "topic": "the germ theory of disease",
+      "query_title": "Streptomycin, a Substance Exhibiting Antibiotic Activity Against Gram-Positive and Gram-Negative Bacteria.* "
+    },
+    {
+      "pid": "2045751247",
+      "citation": 123,
+      "title": "STUDIES ON INFECTION AND IMMUNITY IN EXPERIMENTAL TYPHOID FEVER",
+      "publication_year": 1960,
+      "topic": "the germ theory of disease",
+      "query_title": "STUDIES ON INFECTION AND IMMUNITY IN EXPERIMENTAL TYPHOID FEVER"
+    },
+    {
+      "pid": "2281205388",
+      "citation": 272,
+      "title": "On the Law of Distribution of Energy in the Normal Spectrum",
+      "publication_year": 1901,
+      "topic": "quantum theory",
+      "query_title": "On the Law of Distribution of Energy in the Normal Spectrum"
+    },
+    {
+      "pid": "1986113254",
+      "citation": 21669,
+      "title": "THE ADSORPTION OF GASES ON PLANE SURFACES OF GLASS, MICA AND PLATINUM.",
+      "publication_year": 1918,
+      "topic": "quantum theory",
+      "query_title": "THE ADSORPTION OF GASES ON PLANE SURFACES OF GLASS, MICA AND PLATINUM."
+    },
+    {
+      "pid": "1550061415",
+      "citation": 12211,
+      "title": "Density Functional Theory of Atoms and Molecules",
+      "publication_year": 1980,
+      "topic": "quantum theory",
+      "query_title": "Density Functional Theory of Atoms and Molecules"
+    },
+    {
+      "pid": "1999479012",
+      "citation": 6462,
+      "title": "Statistical mechanics of chain molecules",
+      "publication_year": 1969,
+      "topic": "quantum theory",
+      "query_title": "Statistical mechanics of chain molecules"
+    },
+    {
+      "pid": "2051518078",
+      "citation": 797,
+      "title": "The North Pacific: an Example of Tectonics on a Sphere",
+      "publication_year": 1967,
+      "topic": "plate tectonics",
+      "query_title": "The North Pacific: an Example of Tectonics on a Sphere"
+    },
+    {
+      "pid": "2089850899",
+      "citation": 1231,
+      "title": "Rises, trenches, great faults, and crustal blocks",
+      "publication_year": 1968,
+      "topic": "plate tectonics",
+      "query_title": "Rises, trenches, great faults, and crustal blocks"
+    },
+    {
+      "pid": "2138058376",
+      "citation": 1467,
+      "title": "Sea-floor spreading and continental drift",
+      "publication_year": 1968,
+      "topic": "plate tectonics",
+      "query_title": "Sea-floor spreading and continental drift"
+    },
+    {
+      "pid": "2167435540",
+      "citation": 3226,
+      "title": "STUDIES ON THE CHEMICAL NATURE OF THE SUBSTANCE INDUCING TRANSFORMATION OF PNEUMOCOCCAL TYPES",
+      "publication_year": 1944,
+      "topic": "DNA",
+      "query_title": "STUDIES ON THE CHEMICAL NATURE OF THE SUBSTANCE INDUCING TRANSFORMATION OF PNEUMOCOCCAL TYPES"
+    },
+    {
+      "pid": "1988037647",
+      "citation": 1541,
+      "title": "INDEPENDENT FUNCTIONS OF VIRAL PROTEIN AND NUCLEIC ACID IN GROWTH OF BACTERIOPHAGE",
+      "publication_year": 1952,
+      "topic": "DNA",
+      "query_title": "INDEPENDENT FUNCTIONS OF VIRAL PROTEIN AND NUCLEIC ACID IN GROWTH OF BACTERIOPHAGE"
+    },
+    {
+      "pid": "2126466006",
+      "citation": 12780,
+      "title": "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid",
+      "publication_year": 1953,
+      "topic": "DNA",
+      "query_title": "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid"
+    },
+    {
+      "pid": "1906197854",
+      "citation": 14221,
+      "title": "A study of the conditions and mechanism of the diphenylamine reaction for the colorimetric estimation of deoxyribonucleic acid",
+      "publication_year": 1956,
+      "topic": "DNA",
+      "query_title": "A study of the conditions and mechanism of the diphenylamine reaction for the colorimetric estimation of deoxyribonucleic acid"
+    },
+    {
+      "pid": "2080240343",
+      "citation": 1737,
+      "title": "Molecular weight analysis of oligopeptides by electrophoresis in polyacrylamide gel with sodium dodecyl sulfate",
+      "publication_year": 1971,
+      "topic": "DNA",
+      "query_title": "Molecular weight analysis of oligopeptides by electrophoresis in polyacrylamide gel with sodium dodecyl sulfate"
+    },
+    {
+      "pid": "2050499271",
+      "citation": 3875,
+      "title": "A complementation analysis of the restriction and modification of DNA in Escherichia coli",
+      "publication_year": 1969,
+      "topic": "DNA",
+      "query_title": "A complementation analysis of the restriction and modification of DNA in Escherichia coli"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ def clean_reference_data(nodes, edges, top_id):
     # 时间边界
     # today = datetime.date.today()
     # time_stamp_flag = int(time.mktime(time.strptime(today.strftime('%Y-%m-%d'), '%Y-%m-%d')))
-    time_stamp_flag = int(time.mktime(time.strptime('2025-05-30', '%Y-%m-%d')))
+    time_stamp_flag = int(time.mktime(time.strptime('2025-12-31', '%Y-%m-%d')))
 
     # 先找到 top paper 的时间戳（如果存在）
     top_paper_time_stamp = 0

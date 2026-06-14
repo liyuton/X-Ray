@@ -33,7 +33,15 @@ python setup.py build_ext --inplace
 For the Elasticsearch export utility, run `python test/es_filter_high_citation.py --help` or `python src/es_filter_high_citation.py --help`.
 
 ## Coding Style & Naming Conventions
-Follow existing Python style: 4-space indentation, `snake_case` for files, functions, and variables, and `UPPER_CASE` for module constants. Keep scripts runnable as direct entry points with `if __name__ == "__main__":`. Prefer small, single-purpose functions over expanding monolithic loops. No formatter or linter config is checked in, so match surrounding code and keep imports and argument names stable.
+Follow existing Python style: use 4-space indentation, descriptive `snake_case` for files, functions, variables, config keys, and script names, and `UPPER_CASE` for module constants. Keep scripts runnable as direct entry points with `if __name__ == "__main__":`. Prefer small, single-purpose functions over expanding monolithic loops, and keep imports, argument names, and relative path behavior stable unless the change requires otherwise. No formatter or linter config is checked in, so match the surrounding code rather than introducing external style rules.
+
+When adding or materially changing project-specific pipeline modules or functions, add a short standardized annotation directly above the changed module-level block or function:
+
+```python
+### xray: <feature description> ###
+```
+
+Replace `<feature description>` with a concise explanation of the new or changed functionality, such as `export yearly DPI summary` or `validate GML slice inputs`. Use the annotation only where it helps trace meaningful behavior changes; do not add it to trivial formatting edits, import-only changes, or obvious local variable adjustments.
 
 ## Testing Guidelines
 There is no centralized `pytest` suite yet. Validate changes by running the specific script you touched on a small PID set and checking the expected files under `temp_files/` or `output/`. Name new checks `test_<feature>.py` and place them in `test/` unless they are tightly coupled to a `src/` script.

@@ -268,7 +268,7 @@ def main(target_pid, thresholds, output_root):
                 logging.error(f"Error at {yr}: {e}")
 
 if __name__ == "__main__":
-    pids = ["2113233457","2137775453"]
+    pids = ["3177828909"]
     # pids = [
     # '4313324526',
     # '1575585006',
@@ -281,7 +281,7 @@ if __name__ == "__main__":
     # '2033541702']
     thresholds = [10]
 
-    output_root = '../output/20260520-2' 
+    output_root = '../output/20260607_alphafold' 
 
     for pid in pids:
         main(pid, thresholds, output_root)

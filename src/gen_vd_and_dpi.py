@@ -390,7 +390,7 @@ def main():
     # PIDs to process
     # pids = ['2100837269']
     # pids = ["2113233457","2137775453"]
-    pids = ["2143107875"]
+    pids = ["3177828909"]
     # pids = [
     # '4313324526',
     # '1575585006',
@@ -404,7 +404,7 @@ def main():
     # Thresholds for entropy (can specify multiple)
     thresholds = [10]
     # output_root = '../output/20260108zhangtao'
-    output_root = '../output/20260525' 
+    output_root = '../output/20260607_alphafold' 
     # ===============================================
 
     use_default_threshold_dir = len(thresholds) == 1 and float(thresholds[0]) == 10.0

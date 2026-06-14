@@ -134,7 +134,7 @@ def get_exact_paper_id_from_es_by_title(title):
 # 测试函数
 if __name__ == "__main__":
 
-    test_titles = ["Unidentified Curved Bacilli in the Stomach of Patients with Gastritis and Peptic Ulceration"]
+    test_titles = ["Highly accurate protein structure prediction with AlphaFold"]
     
     
     for test_title in test_titles:

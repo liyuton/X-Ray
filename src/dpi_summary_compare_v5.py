@@ -28,7 +28,7 @@ def completion(user_prompt):
     response = requests.post(
         url='https://openai.acemap.cn/v1/chat/completions',
         headers={'Authorization': f'Bearer {sjtu_temp}'},
-        json={'model': 'gpt-5.4-mini', 'messages': dialogue},
+        json={'model': 'gpt-5.5', 'messages': dialogue},
         verify=False,
         timeout=600
     )
@@ -392,6 +392,7 @@ def build_node_and_structure_strings(pid, year_data, ke_data):
         structure_info_str += "\n"
     return node_info_str, structure_info_str
 
+### xray: refine comparative prompt with abstract-grounded idea evolution ###
 # 构建最终综合 prompt（两个 pid -> 单个 prompt）
 def build_combined_prompt(
     pid1,
@@ -442,6 +443,16 @@ In the final report:
 - If abstracts are missing or too vague for a node, explicitly mark the semantic evidence as limited instead of inventing details.
 - Distinguish these semantic roles when evidence supports them: concept originator, method importer, method stabilizer, bridge paper, benchmark/application carrier, synthesis node, and frontier redirector.
 
+The report must be idea-centered, not structure-centered. Treat Idea Tree expansion, Knowledge Entropy, VD, and DPI as evidence for intellectual evolution, not as the main story. Whenever you describe a structural expansion, energy-level transition, transition window, or relative influence difference, immediately connect it to concrete ideas found in the relevant paper titles and abstracts.
+
+Avoid monotonous statements such as "the tree became deeper," "VD increased," or "DPI was high" unless you also explain:
+- Which paper or hub is involved.
+- What specific idea, method, problem framing, experimental result, or application direction appears in its abstract.
+- How that idea plausibly caused, enabled, or redirected downstream development in the Idea Tree.
+- Which later papers, branches, or subfields absorbed that idea differently.
+
+If an abstract is unavailable, say that the idea-level interpretation is limited and rely only on the title, citation direction, year, KE, and tree position. Do not invent missing content.
+
 ## Task Overview (STRICT)
 You must produce ONE single English report that contains the following components, in the specified order.
 
@@ -451,14 +462,17 @@ Produce a **brief standalone analysis** for **each** target paper:
 - "{title2}"
 Each analysis should:
 
-- Summarize the Idea Tree evolution for the target paper, but make the temporal narrative semantic: explain which concepts or methods entered the lineage, which were preserved, and which were transformed over time.
-- Use VD changes as supporting evidence for energy-level transitions, stalls, or widening-without-deepening patterns, without mechanically reporting raw VD values. Use DPI as evidence of structural potential or transition windows, but do not overstate it as a deterministic prediction.
-- Identify 2-4 key nodes or hubs in the Idea Tree, prioritizing nodes with high Knowledge Entropy or strong downstream branching.
+- Summarize the Idea Tree evolution for the target paper through an **idea-evolution narrative**. Temporal progression and major structural expansions should appear as the skeleton of the story, but the main explanation must be how specific ideas were born, inherited, recombined, or redirected by later papers.
+- Explain which concepts or methods entered the lineage, which were preserved, and which were transformed over time.
+- For each major energy-level transition or important structural expansion, explain the intellectual trigger: identify the paper(s) associated with the transition and use their abstracts to describe which concept, method, experiment, data resource, theoretical framing, or application demand made the new layer possible. Do not merely say that the VD rose or a new layer appeared.
+- Use VD changes as supporting evidence for energy-level transitions, stalls, or widening-without-deepening patterns, without mechanically reporting raw VD values. Use DPI as evidence of structural potential or transition windows, but do not overstate it as a deterministic prediction. When a DPI window is discussed, connect it to the papers and ideas that accumulated before the later transition.
+- Identify 2–4 key nodes or hubs in the Idea Tree, prioritizing nodes with high Knowledge Entropy or strong downstream branching.
 - Explain concrete semantic knowledge flow paths using evidence from paper abstracts in the Node Information sections. For each key path, state:
   - the source concept or method,
   - the receiving paper's reinterpretation or extension,
   - the semantic shift created by that transfer.
 - Include at least one short "concept trajectory" in prose for each target paper, connecting the target paper to later nodes through citation direction and abstract evidence.
+- For every key node you mention, state its intellectual function in the lineage, such as "introduced the mechanism," "translated the idea into a new application field," "provided a measurement method," "generalized the model," or "connected two previously separate problem framings."
 - Explicitly characterize the historical role of the target paper using one or more of the following lenses:
   - Foundational initiator
   - Methodological consolidator
@@ -466,7 +480,7 @@ Each analysis should:
   - Domain-expanding successor
   - Semantic redirector
   - Application carrier
-- Keep each standalone analysis concise (approximately 3-5 paragraphs), with more space devoted to semantic interpretation than to graph description.
+- Keep each standalone analysis concise (approximately 3–5 paragraphs), with more space devoted to semantic interpretation than to graph description.
 
 ### 2. Comparative Historical and Causal Analysis
 After the two standalone analyses, produce a **comparative analysis** that goes beyond surface comparison and explicitly reasons about **precedence, succession, influence, inspiration, and semantic divergence** between the two papers.
@@ -474,7 +488,7 @@ After the two standalone analyses, produce a **comparative analysis** that goes 
 This section MUST include:
 
 #### 2.1 Intellectual Precedence and Succession
-- Determine whether the two target papers stand in a **predecessor-successor relationship**, a **parallel but independent evolution**, or a **mutual reinforcement relationship**.
+- Determine whether the two target papers stand in a **predecessor–successor relationship**, a **parallel but independent evolution**, or a **mutual reinforcement relationship**.
 - Be conservative when assigning predecessor-successor status. Do **not** force a simple linear predecessor→successor relationship merely because one paper is earlier or one tree has stronger VD/DPI growth. If the evidence shows shared downstream descendants, overlapping but distinct lineages, or complementary technical roles, prefer a nuanced judgment such as **parallel but interlinked**, **mutual reinforcement**, or **chronological predecessor in a narrow substream but independent methodological foundation in the broader field**.
 - Justify your judgment using:
   - Directionality of citation paths
@@ -486,13 +500,16 @@ This section MUST include:
 
 #### 2.2 Relative Influence Assessment
 - Compare the **historical influence** of the two papers by analyzing:
-  - Breadth and depth of downstream Idea Tree branches
-  - Persistence of influence across multiple years
-  - Presence in high-entropy or structurally central positions
-  - Energy-level transitions and DPI-based predictive windows
+  - Which concrete research domains, application areas, methods, or theoretical questions each paper influenced.
+  - What different downstream ideas each paper inspired, and how those directions diverged from one another.
+  - Breadth and depth of downstream Idea Tree branches as evidence of those idea-level effects.
+  - Persistence of influence across multiple years, especially whether later papers keep reusing the same conceptual mechanism, adapt it into new fields, or transform it into a methodological platform.
+  - Presence in high-entropy or structurally central positions, interpreted as signs of cross-idea integration rather than merely large metric values.
+  - Energy-level transitions and DPI-based predictive windows, interpreted through the specific papers and ideas that supplied the transition potential.
 - For each influence claim, specify the semantic channel of influence, such as a method being reused, a problem framing being generalized, a benchmark or application setting being adopted, or concepts being recombined by high-entropy nodes.
 - Conclude which paper demonstrates **higher long-term influence**, **broader cross-subfield impact**, or **stronger methodological legacy**, and specify the dimension(s) in which this holds.
-- VD/DPI should strengthen this structural influence assessment, but it must not replace concrete citation-path, KE, title, and abstract evidence.
+- VD/DPI should strengthen this influence assessment, but it must not replace concrete citation-path, KE, title, and abstract evidence. Do not write this section as a chronological list of VD, DPI, or tree-shape changes. Start from the intellectual effects, then use tree structure and metrics as supporting evidence.
+- When comparing influence, name the inspired directions separately. For example, distinguish influence on theory formation, empirical measurement, algorithmic method, system design, biomedical/physical/social application, or other domains only when those directions are supported by the provided titles and abstracts.
 
 #### 2.3 Comparative Inspiration at Intersection Points
 - Focus on **historical intersection points** where the two Idea Trees intersect, overlap, or share intellectual ancestry.
@@ -520,10 +537,10 @@ List the full "Identified Intersection Papers" only once in this section. Do not
 - Explain how these differences shaped their respective roles in the field's evolution.
 
 ### 3. Insights and Forward-Looking Hypotheses
-Provide a short bullet list (3-6 items) of **actionable insights or research hypotheses**, such as:
+Provide a short bullet list (3–6 items) of **actionable insights or research hypotheses**, such as:
 - Which line of work is more likely to generate future breakthroughs
 - Which conceptual gaps remain underexplored
-- Which paper's lineage is more adaptable to emerging subfields
+- Which paper’s lineage is more adaptable to emerging subfields
 - Which semantic combinations or concept transfers appear promising but underdeveloped
 
 ### 4. Report Format Requirements
@@ -535,6 +552,8 @@ Provide a short bullet list (3-6 items) of **actionable insights or research hyp
   - "Reference List"
 - Do not expose raw IDs in the narrative; refer to papers by title or short descriptive names.
 - Do not mechanically report raw VD or DPI values in the narrative; use them only to support causal interpretation of transitions and predictive windows.
+- Do not let the standalone analyses or relative influence assessment become plain descriptions of tree shape, VD, or DPI. Every major structural statement must be paired with an abstract-grounded explanation of the paper idea that drove or absorbed that change.
+- When explaining an energy-level transition, prefer the pattern: "paper idea from abstract -> citation/branch position -> new inheritance layer or transition evidence -> downstream research direction." Keep this as prose, not as a formula.
 - Avoid saying DPI "predicted" a later transition unless the provided DPI evidence clearly appears before a later VD rise; otherwise describe it as structural potential, a transition window, or insufficient potential.
 - The report should contain substantially more semantic interpretation than structural description. A useful target is at least two semantic claims for every graph-structure claim.
 - Do not produce a purely chronological summary. Each chronological observation must be tied to a concept movement, method adaptation, problem reframing, or application shift.
